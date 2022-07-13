@@ -1,0 +1,28 @@
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.long-text {
+    text-align: justify;
+    line-height: 20px;
+}

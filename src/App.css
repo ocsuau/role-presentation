@@ -1,0 +1,29 @@
+#app {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #F5F6F7;
+}
+
+.main-title {
+    display: block;
+    font-size: 50px;
+    font-weight: 300;
+    text-shadow: 2px 2px 1px lightslategray;
+    margin-bottom: 50px;
+}
+
+#content {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 80%;
+}
+
+.employee-card {
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 10px lightslategray;
+}
+
+.example:last-child {
+    margin-bottom: 0;
+}
