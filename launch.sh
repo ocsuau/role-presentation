@@ -1,6 +1,7 @@
 BUILD_NUMBER=$RANDOM
+PROJECT_NAME=role-presentation
 
-BUILD_IMAGE_NAME=role-presentation-build
+BUILD_IMAGE_NAME="${PROJECT_NAME}-build"
 BUILD_IMAGE="${BUILD_IMAGE_NAME}:${BUILD_NUMBER}"
 
 docker build . \
@@ -8,7 +9,7 @@ docker build . \
     --tag $BUILD_IMAGE
 
 
-PUBLISH_IMAGE_NAME=role-presentation-publish
+PUBLISH_IMAGE_NAME="${PROJECT_NAME}-publish"
 PUBLISH_IMAGE="${PUBLISH_IMAGE_NAME}:${BUILD_NUMBER}"
 
 docker build . \
