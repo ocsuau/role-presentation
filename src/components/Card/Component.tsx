@@ -15,7 +15,7 @@ type PropertiesType = {
 
 const component = (props: PropertiesType) => (
     <div className={`card ${props.classNames}`}>
-        <img src={props.imageSrc} alt="img" />
+        <img width="300" height="300" src={props.imageSrc} alt="img" />
         <div className="card-content">
             <span className="title">{props.title}</span>
             { props.subtitle && <span className="subtitle">{props.subtitle}</span>}

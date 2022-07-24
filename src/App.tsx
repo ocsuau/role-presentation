@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 
-import { Employee } from './employees';
-import employeeService from './employeeService';
+import employeeService from './modules/employee/service';
+
+import { Employee } from './modules/employee/types';
 
 import Card from './components/Card/Component';
 
 import './App.css';
+
 
 const App = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);
@@ -13,7 +15,10 @@ const App = () => {
   useEffect(() => {
     employeeService
       .getAll()
-      .subscribe(insertEmployee);
+      .subscribe({
+        next: insertEmployee,
+        complete: () => console.log('Completed')
+      });
   }, []);
 
   const insertEmployee =

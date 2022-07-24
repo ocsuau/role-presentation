@@ -31,6 +31,10 @@
     box-shadow: 5px 5px 10px lightslategray;
 }
 
+.employee-card img {
+    background-color: #F5F6F7;
+}
+
 .example:last-child {
     margin-bottom: 0;
 }
