@@ -36,7 +36,7 @@ const App = () => {
         title={employee.name}
         imageSrc={employee.imageUrl}
         subtitle={employee.role}
-        longText={employee.longDescription}
+        longText={employee.address}
         classNames="employee-card" />);
   
   return (

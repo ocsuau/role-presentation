@@ -8,7 +8,9 @@ export default class Fake implements Endpoint {
   public getAll(): Observable<Employee> {
     return from(fakeEmployees)
       .pipe(
-        mergeMap((employee, index) => of(employee).pipe(delay((index + 2) * 1000)))
+        mergeMap((employee, index) =>
+          of(employee)
+            .pipe(delay((index + 2) * 1000)))
       );
   }
 

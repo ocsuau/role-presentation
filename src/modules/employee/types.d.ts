@@ -7,5 +7,5 @@ export type Employee = {
   name: string;
   imageUrl: string;
   role?: string;
-  longDescription: string;
-}
+  address: string;
+};
